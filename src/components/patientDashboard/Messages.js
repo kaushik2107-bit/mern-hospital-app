@@ -3,7 +3,12 @@ import axios from "axios"
 import "./patientDashboard.css"
 import { io } from "socket.io-client"
 
-const socket = io("https://mern-hospital-app.herokuapp.com/")
+const socket = io("https://mern-hospital-app.herokuapp.com/", {
+	withCredentials: true,
+ 	extraHeaders: {
+    	"my-custom-header": "abcd"
+  	}
+})
 socket.on('connect', () => {
 	// console.log(`Connection id: ${socket.id}`)
 })
