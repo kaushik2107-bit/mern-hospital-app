@@ -1,0 +1,41 @@
+[
+	{
+		"patient_email": "kaushiksbhowmick@gmail.com",
+		"past_appointments": [
+			{
+				"doctor_name": "Dr. Jason Mosby",
+				"specialization": "Family Medicine",
+				"status": "done",
+				"start": "10:00",
+				"end": "10:25",
+				"date": "07-07-2022"
+			},
+			{
+				"doctor_name": "Dr. Ross Eriksen",
+				"specialization": "Dermatologist",
+				"status": "done",
+				"start": "12:00",
+				"end": "12:25",
+				"date": "08-10-2022"
+			},
+			{
+				"doctor_name": "Dr. Haley Dunphy",
+				"specialization": "Orthopedic",
+				"status": "done",
+				"start": "11:00",
+				"end": "11:25",
+				"date": "10-10-2022"
+			}
+		],
+		"upcoming_appointments": [
+			{
+				"doctor_name": "Dr. Jason Mosby",
+				"specialization": "Family Medicine",
+				"status": "done",
+				"start": "10:00",
+				"end": "10:25",
+				"date": "07-11-2023"
+			}
+		]
+	}
+]

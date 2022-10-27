@@ -1,0 +1,273 @@
+.logo {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.logo h2 {
+	margin-left: 40px;
+}
+.menu {
+	margin-top: 30px;
+}
+ul {
+	width: 100%;
+	height: auto;
+}
+ul li {
+	height: 40px;
+	/*border: 1px solid black;*/
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 10px;
+	color: #333333;
+	border-bottom: 1px solid #DDDDDD;
+	cursor: pointer;
+}
+ul li i {
+	margin: 10px;
+	color: #408CFD;
+}
+
+.dashboard {
+	width: 92%;
+	padding: 15px;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px 2px #EEEEEE;
+}
+
+.today__appointments table, .upcoming__appointments table, .past__appointments table {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.upcoming__appointments tr, .upcoming__appointments td {
+	border: 1px solid #EEEEEE;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.past__appointments tr, .past__appointments td {
+	border: 1px solid #EEEEEE;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.today__appointments tr, .today__appointments td {
+	border: 1px solid #EEEEEE;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.today__appointments td:first-child, .upcoming__appointments td:first-child, .past__appointments td:first-child {
+	width: 10px;
+	text-align: center;
+}
+
+.today__appointments thead, .upcoming__appointments thead, .past__appointments thead {
+	font-weight: 500;
+}
+
+.appointment__form input {
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 2px;
+	border: none;
+	border: 1px solid #AAAAAA;
+}
+
+.table__header td {
+	background-color: #408CFD;
+	color: #EEEEEE;
+	text-align: center;
+}
+
+.upcoming__appointments .status {
+	padding: 4px;
+	background-color: rgba(255, 150, 20, 1);
+	color: white;
+	width: 70%;
+	margin: auto;
+	border-radius: 10px;
+}
+
+.today__appointments .status {
+	padding: 4px;
+	background-color: rgba(255, 150, 20, 1);
+	color: white;
+	width: 70%;
+	margin: auto;
+	border-radius: 10px;
+}
+
+.past__appointments .status {
+	padding: 4px;
+	background-color: rgba(10, 200, 100, 1);
+	color: white;
+	width: 70%;
+	margin: auto;
+	border-radius: 10px;	
+}
+
+.today__appointments button {
+	outline: none;
+	border:  none;
+	background-color: rgb(200, 200, 100);
+	color: white;
+	padding: 4px;
+	width: 90%;
+	font-size: 15px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.messages {
+	width: 95%;
+	height: calc(100% - 120px);
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 5px 2px #EEEEEE;
+	display: flex;
+}
+
+.left {
+	width: 35%;
+	border-right: 2px solid #DDDDDD;
+}
+.right {
+	width: 75%;
+}
+
+.message__box .header {
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	color: #EEEEEE;
+	background-color: #408cfd;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.message__box .header h2 {
+	margin: 25px;
+}
+
+
+.message__box .user__box {
+
+	border-bottom: 1px solid #AAAAAA;
+	padding: 20px;
+	width: calc(100% - 40px);
+}
+
+.message__user {
+	width: 100%;
+	height: 100%;
+}
+
+.message__user .chats {
+	width: calc(100% - 20px);
+	height: calc(100% - 140px);
+	border-bottom: 1px solid #CCCCCC;
+	display: flex;
+	flex-flow: column-reverse;
+	padding: 10px;
+	overflow-y: scroll;
+	pointer-events: auto;
+	flex: 1;
+}
+
+.message__user .name {
+	width: calc(100% - 20px);
+	height: 70px;
+	background-color: #408cfd;
+	display: flex;
+	align-items: center;
+	color: #EEEEEE;
+	font-size: 20px;
+	font-weight: 700;
+	padding-left: 20px;
+}
+
+.right {
+
+}
+
+.chats .other {
+	margin: 5px;
+	border: 1px solid black;
+	max-width: 40%;
+	word-wrap: break-word;
+	width: fit-content;
+	border-radius: 10px;
+	padding: 5px 10px 5px 10px;
+}
+
+.chats .myself {
+	margin: 5px;
+	border: 1px solid #408cfd;
+	max-width: 40%;
+	word-wrap: break-word;
+	width: fit-content;
+	border-radius: 10px;
+	padding: 5px 10px 5px 10px;
+	align-self: flex-end;
+	background-color: #408cfd;
+	color: #EEEEEE;
+	text-align: right;
+}
+
+.chats .myself .datetime {
+	color: #DDDDDD;
+}
+
+.chats .datetime {
+	font-size: 8px;
+	color: grey;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.message__input {
+	width: 100%;
+	height: 50px;
+}
+
+.form__message {
+	display: flex;
+	width: 100%;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+.msgbox {
+	width: 100%;
+	height: 50px;
+	box-sizing: border-box;
+	padding: 10px;
+	outline: none;
+}
+
+.msgbox:focus {
+	box-shadow: 0 0 0px 1px #408cfd;
+}
+
+.button__send {
+	border-radius: 0px;
+	width: 100px;
+	height: 50px;
+	border: 1px solid #408cfd;
+}
+
+
